@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Vite App</title>
+  </head>
+  <body class="bg-slate-900">
+   
+<div class="p-8 w-2/6 my-0 mx-auto flex flex-col items-center gap-10">
+
+  <h1 class="text-center mb-5 text-white text-xl font-semibold">Text to Speech</h1>
+  <p class="lead text-white text-center">Select Voice</p>
+  
+
+  <select id="voices" class="bg-slate-900 text-white form-select bg-secondary text-light"></select>
+
+  <div class="flex justify-around w-full items-center">
+
+    <div class="d-flex mt-4 text-light">
+      <div>
+        <p class="lead text-white">Volume</p>
+        <input type="range" min="0" max="1" value="1" step="0.1" id="volume" />
+        <span id="volume-label" class="ms-2 text-white">1</span>
+      </div>
+      <div class="">
+        <p class="lead text-white">Rate</p>
+        <input type="range" min="0.1" max="10" value="1" id="rate" step="0.1" />
+        <span id="rate-label" class="ms-2 text-white">1</span>
+      </div>
+      <div>
+        <p class="lead text-white">Pitch</p>
+        <input type="range" min="0" max="2" value="1" step="0.1" id="pitch" />
+        <span id="pitch-label" class="ms-2 text-white">1</span>
+      </div>
+    </div>
+  
+    <div class="flex flex-col gap-2 ">
+
+      <textarea class="outline p-5 bg-slate-900 rounded-md border-solid border-2 text-white border-rose-50 form-control bg-dark text-light mt-5" cols="30" rows="10" placeholder="Type here..."></textarea>
+    
+      <div class="mb-5 flex justify-evenly items-center ">
+        <button id="start" class=" border-rose-50 border-solid border-2 p-2 rounded-md text-white btn btn-success mt-5 me-3">Start</button>
+      <button id="pause" class="border-rose-50 border-solid border-2 p-2 rounded-md text-white btn btn-warning mt-5 me-3">Pause</button>
+      <button id="resume" class="border-rose-50 border-solid border-2 p-2 rounded-md text-white btn btn-info mt-5 me-3">Resume</button>
+      <button id="cancel" class="border-rose-50 border-solid border-2 p-2 rounded-md text-white btn btn-danger mt-5 me-3">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

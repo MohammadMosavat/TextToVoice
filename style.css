@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-size: 62.5%;
+}
+
+.mr-5{
+  margin-right: 1.5rem;
+}
+
+.ml--2{
+  margin-left: -1rem;
+}
+
+.border-2{
+  border-width: 0.5px
+}
+
